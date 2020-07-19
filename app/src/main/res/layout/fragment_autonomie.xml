@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_white_1000"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:id="@+id/lesdexugauge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+            android:id="@+id/auto_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            app:backgroundColor="@color/md_blue_500"
+            app:disableBackgroundImage="false"
+            app:showUnit="true"
+            app:speed="0"
+            app:speedTextColor="@color/md_blue_300"
+            app:speedTextSize="25dp"
+            app:unit="Knts"
+            app:unitTextColor="@color/md_blue_300"
+            app:unitTextSize="10dp">
+
+
+        </com.github.capur16.digitspeedviewlib.DigitSpeedView>
+
+        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+            android:id="@+id/auto_fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            app:backgroundColor="@color/md_blue_500"
+            app:disableBackgroundImage="false"
+            app:showUnit="true"
+            app:speed="0"
+            app:speedTextColor="@color/md_white_1000"
+            app:speedTextSize="25dp"
+            app:unit="L"
+            app:unitTextColor="@color/md_white_1000"
+            app:unitTextSize="10dp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/textlayou2t"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            
+            android:rowCount="7">
+
+            <!--Colonne 1 Ligne 1 RPM-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="10dp"
+                    android:text="Essence disponible"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conso. distance"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conso. instantanée"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+
+
+            </androidx.cardview.widget.CardView>            <!--Colonne 2 Ligne 1 RPM-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autonomie distance"
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autonomie temps"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance parcourue"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ligne7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conso. dist. parcourue"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tx_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/digital7"
+                    android:text=""
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/auto_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/md_black_1000"
+        android:layout_weight="1"/>
+
+</LinearLayout>

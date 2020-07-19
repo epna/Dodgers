@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Dodgers Connect</string>
+    <string name="title_home">Navigation</string>
+    <string name="title_dashboard">Mer</string>
+    <string name="title_notifications">Paramétres</string>
+    <string name="RateFuel">Comso. inst.</string>
+    <string name="RPM">RPM</string>
+    <string name="Volts">Volts</string>
+    <string name="Coolant">T° Moteur</string>
+    <string name="Hours">Heures</string>
+    <string name="FFamily">"@font/led7"</string>
+    <string name="title_gauge">Tableau de bord</string>
+    <string name="synthese">Synthese</string>
+    <string name="regime">Régime</string>
+    <string name="batterie">batterie</string>
+    <string name="consoInst">Conso. inst.</string>
+    <string name="litreheure">l/h</string>
+    <string name="volt">V</string>
+    <string name="celcius">°C</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

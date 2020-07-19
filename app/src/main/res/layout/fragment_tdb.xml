@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:background="@color/md_black_1000"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:id="@+id/colonne1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ligne1B"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/A1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_toursminute_babord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    app:gaugeEndValue="4500"
+                    app:gaugePointEndColor="@color/md_red_500"
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_tourMinuteB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_toursminute_babord"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_toursminute_babord"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/RPM"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_toursminute_babord"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/regime"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/A2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_consoInstB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:gaugeEndValue="100"
+                    app:gaugePointEndColor="@color/md_red_500"
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_cosoInstB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_consoInstB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_consoInstB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/litreheure"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_consoInstB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/consoInst"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne2B"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/B1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_batterieB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    app:gaugeEndValue="15"
+                    app:gaugePointEndColor="@color/md_red_500"
+
+
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_batterieB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_batterieB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_batterieB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/volt"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_batterieB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/batterie"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/B2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_tempMoteurB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:gaugeEndValue="110"
+                    app:gaugePointEndColor="@color/md_red_500"
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_temperatureB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_tempMoteurB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_tempMoteurB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/celcius"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_tempMoteurB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="T° moteur"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tx_heuresMoteurB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tdb_whiterounded">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/colonne2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="4"
+        android:background="@drawable/tdb_whiterounded"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_weight="2"
+    android:layout_height="wrap_content">
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/cg_vitesse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+
+            app:gaugeDividerColor="@color/md_blue_900"
+            app:gaugeDividerDrawFirst="false"
+            app:gaugeDividerDrawLast="true"
+            app:gaugeDividerSize="1"
+            app:gaugeDividerStep="5"
+
+            app:gaugePointEndColor="@color/md_red_500"
+            app:gaugePointSize="10"
+
+            app:gaugePointStartColor="@color/md_yellow_500"
+            app:gaugeStrokeCap="BUTT"
+            app:gaugeStrokeColor="@color/md_black_1000"
+            app:gaugeStrokeWidth="8dp"
+
+
+            app:gaugeStartValue="0"
+            app:gaugeStartAngle="135"
+            app:gaugeEndValue="40"
+            app:gaugeSweepAngle="270" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/tx_speed"
+        android:text="0"
+        android:textColor="@color/md_white_1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tx_speed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cg_vitesse"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="Knts"
+        android:textColor="@color/md_white_1000" />
+
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <pl.pawelkleczkowski.customgauge.CustomGauge
+                android:id="@+id/cg_essence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                app:gaugeDividerColor="@color/md_blue_900"
+
+                app:gaugeDividerDrawFirst="true"
+                app:gaugeDividerDrawLast="true"
+                app:gaugeDividerSize="3"
+                app:gaugeDividerStep="5"
+
+                app:gaugePointEndColor="@color/md_yellow_500"
+                app:gaugePointStartColor="@color/md_red_500"
+                app:gaugeStrokeCap="BUTT"
+                app:gaugeStrokeColor="@color/md_white_1000"
+                app:gaugeStrokeWidth="15dp"
+
+                app:gaugeStartAngle="180"
+                app:gaugeStartValue="0"
+                app:gaugeEndValue="500"
+                app:gaugeSweepAngle="180" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tx_essencevalue"
+                android:text="0"
+                android:textColor="@color/md_white_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/cg_essence"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pompe2"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tx_Infos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:textSize="10dp"
+            android:text="ssid"
+            android:textColor="@color/md_grey_400"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/colonne3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:layout_weight="4"
+
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/TA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_toursMinuteT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:gaugeEndValue="4500"
+                    app:gaugePointEndColor="@color/md_red_500"
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_tourMinuteT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_toursMinuteT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView212"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_toursMinuteT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/RPM"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_toursMinuteT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/regime"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_consoInstT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:gaugeEndValue="100"
+                    app:gaugePointEndColor="@color/md_red_500"
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_consoInstT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_consoInstT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_consoInstT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/litreheure"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_consoInstT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/consoInst"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/TB1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_batterieT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:gaugeEndValue="15"
+                    app:gaugePointEndColor="@color/md_red_500"
+
+
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_batterieT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_batterieT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView232"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_batterieT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/volt"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView233"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_batterieT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/batterie"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TB2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/tdb_whiterounded">
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/cg_tempMoteurT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:gaugeEndValue="110"
+                    app:gaugePointEndColor="@color/md_red_500"
+                    app:gaugePointSize="6"
+                    app:gaugePointStartColor="@color/md_yellow_500"
+                    app:gaugeStartAngle="135"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/md_white_1000"
+                    app:gaugeStrokeWidth="5dp"
+                    app:gaugeSweepAngle="270" />
+
+                <TextView
+                    android:id="@+id/tx_temperatureT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_tempMoteurT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:text="0"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView242"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_tempMoteurT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/celcius"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView243"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cg_tempMoteurT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:text="T° moteur"
+                    android:textColor="@color/md_yellow_400"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_heuresMoteurT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tdb_whiterounded">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
